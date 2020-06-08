@@ -6,10 +6,10 @@
 }
 
 body{
-  display : flex;
+  /*display : flex;
   justify-content : center;
   align-items : center;
-  flex-wrap : wrap;
+  flex-wrap : wrap;*/
   min-height : 100vh;
   background : black;
 }
@@ -131,9 +131,9 @@ header{
   background-color: black;
   background-size : cover;
   background-position : center;
-  display : flex;
+  /*display : flex;
   flex-wrap: wrap;
-  justify-content : space-evenly;
+  justify-content : space-evenly;*/
 }
 
 
