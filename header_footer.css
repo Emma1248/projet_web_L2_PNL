@@ -18,10 +18,12 @@ header {
     float : right;
     list-style-type : none;
     margin-top : 25px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header_button .header_button_each {
     display : inline-block;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header_button .header_button_each a{
