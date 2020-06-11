@@ -2,16 +2,25 @@
     margin: 0;
     padding: 0;    
 }
-
-header{
+body{
     
-    background-color : black;
-    /*height : 558px;
-    width: 838px;*/
-    height : 100vh;
+    display:flex;
+    flex-wrap: wrap;
+    background: url('backgroundPNL.png') no-repeat center fixed;     
+    background-size: cover;
+}
+header{
+    height : 60px;
+    width: 838px;
     background-size : cover;
     background-position : center;
+    display : flex;
+    flex-wrap: wrap;
+    justify-content : space-evenly;
+    flex-basis: 100%;
+    margin-top: 0;
 }
+
 
 ul{
     float : right;
@@ -28,7 +37,7 @@ ul li a{
     color : #fff;
     padding: 5px 20px;
     border : 1px solid transparent;
-    transition : 0,5s ease;
+    transition : 0.5s ease;
     font-family : sans-serif;
 }
 
@@ -37,43 +46,139 @@ ul li a:hover{
     color : #000;
 }
 
-ul li.actualpage a{
-    background-color : rgb(255, 255, 255);
+ul li.actual a{
+    background-color : #fff;
     color : #000;  
 }
 
-.logo img{
-    float : left ;
-    width : 250px;
-    height : auto;
-    padding: 20px;
+
+
+
+
+/*************************************************/
+
+body {
+    background-color: black;
+    font-family: cursive;
+}
+  
+.name {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+  
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
 }
 
 
-.button{
-    position : absolute;
-    top : 65%;
-    left : 50%;
-    transform : translate(-50%,-50%);
+.name{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width : 100%;
+    text-align: center;
+
 }
 
-.button2{
-    border : 1px solid #fff;
-    padding : 10px 30px;
-    color : #fff;
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+}
+
+.img1{
+
+    width: 12%;
+    border-color: #ddd;
+    border-radius: 30px;
+
+}
+
+
+.albumpage{
+    display: flex;
+    flex-wrap: row;
+    flex-basis: 100%;
+    justify-content: center;
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+    font: 15px 'trebuchet MS', 'lucida sans';
+    *padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    margin: 0 0 0 2em;
+}
+
+.albumpage p{
+    position: relative;
+    display:block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: rgb(221, 221, 221);
+    color: #444;
     text-decoration: none;
-    transition : 0.5s ease;
+    border-radius: .5em;
 }
 
-.button2:hover{
-    background-color : #fff;
-    color : #000;
+.albumpage p:before{
+
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.7em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #a71212;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 2em;
+
 }
 
+.Plateforms{
 
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+    width:100%;
 
+}
 
+.Logo{
+    width:60px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    padding-right: 40px;
+    padding-left: 40px;
+}
 
+.Logo:hover {
+	-webkit-transform: scale(1.6);
+	transform: scale(1.6);
+}
 
 
 /**************************************************************/
