@@ -1,119 +1,130 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400');
 
-html, body {
-    width: 100%;
-    height: 100%;
-  font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+header {
+  background-image : linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(PNL_Bercy.jpg);
+  height : 100vh;
+  background-size : cover;
+  background-position : center;
 }
 
-a{
-  text-decoration: none;
+body{
+  margin : 0px;
+  padding : 0px;
+  font-family : 'Montserrat', sans-serif;
+  display : flex;
+  flex-direction: column;
 }
 
-body {
-    background-color: #36BEA6;
+nav {
+  width : 100%;
+  background-color: transparent;
 }
 
-.share__icon {
-    width: 32px;
-    height: 32px;
-    fill: #fff;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 3px;
-}
-.share__icon:last-of-type{
-   margin-right: 0px;
+nav > ul {
+  margin : 0px;
+  padding : 0px;
+  padding-right : 30px;
+  padding-top : 10px;
 }
 
-.share-button {
-  cursor: pointer;
-    display: inline-block;
-    height:42px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    -webkit-transform: translateY(-50%) translateX(-50%);
-   -moz-transform: translateY(-50%) translateX(-50%);
-    left: 50%;
-  -webkit-perspective: 200px;
-  -moz-perspective: 200px;
-  perspective: 200px;
-  
+nav .header_button_each {
+  list-style-type : none;
 }
 
-.share-button__back {
-    background-color: #368b8b;
-    padding: 5px;
-    border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0px 0px 14px rgba(0,0,0,0.1) inset;
+nav .header_button_album {
+  list-style-type : none;
 }
 
-.share-button__front {
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    border-radius: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform-origin: center top;
-    -webkit-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -moz-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -ms-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -o-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
+nav > ul > .header_button_each {
+  float : right;
+  position : relative;
 }
 
-
-
-.share-button__text {
-    margin: 0;
-    line-height: 42px;
-    font-size: 16px;
-    text-align: center;
-    color: #b6b6b6;
+nav >ul::after{
+  content : "";
+  display : table;
+  clear : both;
 }
 
-.share__link {
-    position: relative;
-    top: 40px;
-    display: inline-block;
-    opacity: 0;
-  -webkit-transition: top .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -moz-transition: top .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -ms-transition: top .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -o-transition: top .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: top .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
-  }
-
-.share-button:hover .share-button__front {
-    transform: rotateX(90deg);
+.albums {
+  display : none;
 }
 
-.share-button:hover .share__link {
-    top:0;
-  opacity: 1;
+nav input[type=checkbox]{
+  display : none;
 }
 
-.share-button:hover .share__link:nth-of-type(1){
-  transition-delay:0.1s;
+nav label {
+  display : none;
 }
 
-.share-button:hover .share__link:nth-of-type(2){
-  transition-delay:0.2s;
+nav a{
+  display : inline-block;
+  text-decoration : none;
 }
 
-.share-button:hover .share__link:nth-of-type(3){
-  transition-delay:0.3s;
+nav > ul > .header_button_each > a {
+  padding : 10px 20px;
+  color : white;
 }
 
-.share-button:hover .share__link:nth-of-type(4){
-  transition-delay:0.4s;
+nav .header_button_each:hover .albums{
+  display : inline-block;
+  position : absolute;
+  top : 100%;
+  right : -200px;
+  padding : 0px;
+  z-index : 1000;
+}
+
+.albums .header_button_album a {
+  padding : 15px 30px;
+  font-size : 13px;
+  color : white;
+  width : 270px;
+}
+
+.albums .header_button_album a:hover {
+  font-weight : bold;
+}
+
+nav .header_button_each a:hover{
+  background-color : white;
+  color : black;
+  transition : all 0.6s;
+}
+
+/************************************************************************************************************/
+.title {
+  position : absolute;
+  top : 50%;
+  left : 50%;
+  transform : translate(-50%, -50%);
+}
+
+.title h1{
+  color : white;
+  font-size : 70px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.button {
+  position : absolute;
+  top : 62%;
+  left : 50%;
+  transform : translate(-50%, -50%);
+}
+
+.btn{
+  border : 1px solid white;
+  padding : 10px 30px;
+  color : white;
+  text-decoration : none;
+  transition : 0.6s ease;
+}
+
+.btn:hover {
+  background-color : white;
+  color : black;
 }
