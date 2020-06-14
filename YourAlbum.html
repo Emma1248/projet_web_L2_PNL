@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Your album  </title>
+<link rel = "stylesheet" type = "text/css" href = "YourAlbum.css">
+<script src = "YourAlbum.js"> </script>
+</head>
+
+<header class="header">
+    <div class="main">
+        <div class="nav-li">
+            <ul class = "header_button">
+                <li class = " header_button_each"><a href = "#"> PNL </a></li>
+                <li class = " header_button_each"><a href = "#"> PNL tour </a></li>
+                <li class = " header_button_each"><a href = "#"> Want to play ? </a></li>
+                <li class = " header_button_each"><a href = "#"> THE perferct album </a></li>
+                <li class = " header_button_each"><a href = "#"> Gallery </a></li>
+                <li class = " header_button_each"><a href = "home.html"> Home </a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<body>
+
+    <div class = "content">
+        <div class="buttons">
+            <img class="cover" src="QueLaFamille.jpg">
+            <input id="QLF1" name="T1" type="radio" onclick="getchoice(0,this.value)" value="Je vis je visser">
+            <label for="QLF1" class="side-label">Je vis je visser</label>
+
+            <input id="QLF2" name="T2" type="radio" onclick="getchoice(1,this.value)" value="Lala">
+            <label for="QLF2" class="side-label">Lala</label>
+
+            <input id="QLF3" name="T3" type="radio" onclick="getchoice(2,this.value)" value="Différents">
+            <label for="QLF3" class="side-label">Différents</label>
+
+            <input id="QLF4" name="T4" type="radio" onclick="getchoice(3,this.value)" value="Obligés de prendre">
+            <label for="QLF4" class="side-label">Obligés de prendre</label>
+
+            <input id="QLF5" name="T5" type="radio" onclick="getchoice(4,this.value)" value="De la fenêtre au ter ter">
+            <label for="QLF5" class="side-label">De la fenêtre au ter ter</label>
+
+            <input id="QLF6" name="T6" type="radio" onclick="getchoice(5,this.value)" value="PNL">
+            <label for="QLF6" class="side-label">PNL</label>
+
+            <input id="QLF7" name="T7" type="radio" onclick="getchoice(6,this.value)" value="J'comprends pas">
+            <label for="QLF7" class="side-label">J'comprends pas</label>
+
+            <input id="QLF8" name="T8" type="radio" onclick="getchoice(7,this.value)" value="Gala gala">
+            <label for="QLF8" class="side-label">Gala gala</label>
+
+            <input id="QLF9" name="T9" type="radio" onclick="getchoice(8,this.value)" value="La petite voix">
+            <label for="QLF9" class="side-label">La petie voix</label>
+
+            <input id="QLF10" name="T10" type="radio" onclick="getchoice(9,this.value)" value="Athéna">
+            <label for="QLF10" class="side-label">Athéna</label>
+
+            <input id="QLF11" name="T11" type="radio" onclick="getchoice(10,this.value)" value="Recherche du bonheur">
+            <label for="QLF11" class="side-label">Recherche du bonheur</label>
+
+            <input id="QLF12" name="T12" type="radio" onclick="getchoice(11,this.value)" value="Simba">
+            <label for="QLF12" class="side-label">Simba</label>
+        </div>
+        <div class="buttons">
+            <img class="cover" src="LeMondeChico.jpg">
+            <input id="LMC1" name="T1" type="radio" onclick="getchoice(0,this.value)" value="Le monde ou rien">
+            <label for="LMC1" class="side-label">Le monde ou rien</label>
+
+            <input id="LMC2" name="T2" type="radio" onclick="getchoice(1,this.value)" value="Sur Paname">
+            <label for="LMC2" class="side-label">Sur Paname</label>
+
+            <input id="LMC3" name="T3" type="radio" onclick="getchoice(2,this.value)" value="Oh Lala">
+            <label for="LMC3" class="side-label">Oh Lala</label>
+
+            <input id="LMC4" name="T4" type="radio" onclick="getchoice(3,this.value)" value="J'vends">
+            <label for="LMC4" class="side-label">J'vends</label>
+
+            <input id="LMC5" name="T5" type="radio" onclick="getchoice(4,this.value)" value="Abonné">
+            <label for="LMC5" class="side-label">Abonné</label>
+
+            <input id="LMC6" name="T6" type="radio" onclick="getchoice(5,this.value)" value="J'suis PNL">
+            <label for="LMC6" class="side-label">J'suis PNL</label>
+
+            <input id="LMC7" name="T7" type="radio" onclick="getchoice(6,this.value)" value="Mexico">
+            <label for="LMC7" class="side-label">Mexico</label>
+
+            <input id="LMC8" name="T8" type="radio" onclick="getchoice(7,this.value)" value="Porte de Mesrine">
+            <label for="LMC8" class="side-label">Porte de Mesrine</label>
+
+            <input id="LMC9" name="T9" type="radio" onclick="getchoice(8,this.value)" value="Dans ta rue">
+            <label for="LMC9" class="side-label">Dans ta rue</label>
+
+            <input id="LMC10" name="T10" type="radio" onclick="getchoice(9,this.value)" value="Laisse">
+            <label for="LMC10" class="side-label">Laisse</label>
+
+            <input id="LMC11" name="T11" type="radio" onclick="getchoice(10,this.value)" value="Loin des hommes">
+            <label for="LMC11" class="side-label">Loin des hommes</label>
+
+            <input id="LMC12" name="T12" type="radio" onclick="getchoice(11,this.value)" value="Le M">
+            <label for="LMC12" class="side-label">Le M</label>
+
+            <input id="LMC13" name="T13" type="radio" onclick="getchoice(12,this.value)" value="Rebenga">
+            <label for="LMC13" class="side-label">Rebenga</label>
+
+            <input id="LMC14" name="T14" type="radio" onclick="getchoice(13,this.value)" value="Plus Tony que Sosa">
+            <label for="LMC14" class="side-label">Plus Tony que Sosa</label>
+
+            <input id="LMC15" name="T15" type="radio" onclick="getchoice(14,this.value)" value="Que la mif">
+            <label for="LMC15" class="side-label">Que la mif</label>
+
+            <input id="LMC16" name="T16" type="radio" onclick="getchoice(15,this.value)" value="Tempête">
+            <label for="LMC16" class="side-label">Tempête</label>
+            
+        </div>
+        <div class="buttons">
+            <img class="cover" src="DansLaLegende.jpg">
+            <input id="DLL1" name="T1" type="radio" onclick="getchoice(0,this.value)" value="DA">
+            <label for="DLL1" class="side-label">DA</label>
+
+            <input id="DLL2" name="T2" type="radio" onclick="getchoice(1,this.value)" value="Naha">
+            <label for="DLL2" class="side-label">Naha</label>
+
+            <input id="DLL3" name="T3" type="radio" onclick="getchoice(2,this.value)" value="Dans la légende">
+            <label for="DLL3" class="side-label">Dans la légende</label>
+
+            <input id="DLL4" name="T4" type="radio" onclick="getchoice(3,this.value)" value="Mira">
+            <label for="DLL4" class="side-label">Mira</label>
+
+            <input id="DLL5" name="T5" type="radio" onclick="getchoice(4,this.value)" value="J'suis QLF">
+            <label for="DLL5" class="side-label">J'suis QLF</label>
+
+            <input id="DLL6" name="T6" type="radio" onclick="getchoice(5,this.value)" value="La vie est belle">
+            <label for="DLL6" class="side-label">La vie est belle</label>
+
+            <input id="DLL7" name="T7" type="radio" onclick="getchoice(6,this.value)" value="Kratos">
+            <label for="DLL7" class="side-label">Kratos</label>
+
+            <input id="DLL8" name="T8" type="radio" onclick="getchoice(7,this.value)" value="Luz de Luna">
+            <label for="DLL8" class="side-label">Luz de Luna</label>
+
+            <input id="DLL9" name="T9" type="radio" onclick="getchoice(8,this.value)" value="Tu sais pas">
+            <label for="DLL9" class="side-label">Tu sais pas</label>
+
+            <input id="DLL10" name="T10" type="radio" onclick="getchoice(9,this.value)" value="Sheita">
+            <label for="DLL10" class="side-label">Sheita</label>
+
+            <input id="DLL11" name="T11" type="radio" onclick="getchoice(10,this.value)" value="Humain">
+            <label for="DLL11" class="side-label">Humain</label>
+
+            <input id="DLL12" name="T12" type="radio" onclick="getchoice(11,this.value)" value="Bambina">
+            <label for="DLL12" class="side-label">Bambina</label>
+
+            <input id="DLL13" name="T13" type="radio" onclick="getchoice(12,this.value)" value="Bené">
+            <label for="DLL13" class="side-label">Bené</label>
+
+            <input id="DLL14" name="T14" type="radio" onclick="getchoice(13,this.value)" value="Uranus">
+            <label for="DLL14" class="side-label">Uranus</label>
+
+            <input id="DLL15" name="T15" type="radio" onclick="getchoice(14,this.value)" value="Onizuka">
+            <label for="DLL15" class="side-label">Onizuka</label>
+
+            <input id="DLL16" name="T16" type="radio" onclick="getchoice(15,this.value)" value="Jusqu'au dernier gramme">
+            <label for="DLL16" class="side-label">Jusqu'au dernier gramme</label>
+        </div>
+        <div class="buttons">
+            <img class="cover" src="DeuxFreres.png">
+            <input id="DF1" name="T1" type="radio" onclick="getchoice(0,this.value)" value="Au DD">
+            <label for="DF1" class="side-label">Au DD</label>
+
+            <input id="DF2" name="T2" type="radio" onclick="getchoice(1,this.value)" value="Autre monde">
+            <label for="DF2" class="side-label">Autre monde</label>
+
+            <input id="DF3" name="T3" type="radio" onclick="getchoice(2,this.value)" value="Chang">
+            <label for="DF3" class="side-label">Chang</label>
+
+            <input id="DF4" name="T4" type="radio" onclick="getchoice(3,this.value)" value="Blanka">
+            <label for="DF4" class="side-label">Blanka</label>
+
+            <input id="DF5" name="T5" type="radio" onclick="getchoice(4,this.value)" value="91's">
+            <label for="DF5" class="side-label">91's</label>
+
+            <input id="DF6" name="T6" type="radio" onclick="getchoice(5,this.value)" value="A l'ammoniaque">
+            <label for="DF6" class="side-label">A l'ammoniaque</label>
+
+            <input id="DF7" name="T7" type="radio" onclick="getchoice(6,this.value)" value="Celsius">
+            <label for="DF7" class="side-label">Celsius</label>
+
+            <input id="DF8" name="T8" type="radio" onclick="getchoice(7,this.value)" value="Deux Frères">
+            <label for="DF8" class="side-label">Deux Frères</label>
+
+            <input id="DF9" name="T9" type="radio" onclick="getchoice(8,this.value)" value="Hasta la vista">
+            <label for="DF9" class="side-label">Hasta la vista</label>
+
+            <input id="DF10" name="T10" type="radio" onclick="getchoice(9,this.value)" value="Coeurs">
+            <label for="DF10" class="side-label">Coeurs</label>
+
+            <input id="DF11" name="T11" type="radio" onclick="getchoice(10,this.value)" value="Shenmue">
+            <label for="DF11" class="side-label">Shenmue</label>
+
+            <input id="DF12" name="T12" type="radio" onclick="getchoice(11,this.value)" value="Kuta Ubud">
+            <label for="DF12" class="side-label">Kuta Ubud</label>
+
+            <input id="DF13" name="T13" type="radio" onclick="getchoice(12,this.value)" value="Menace">
+            <label for="DF13" class="side-label">Menace</label>
+
+            <input id="DF14" name="T14" type="radio" onclick="getchoice(13,this.value)" value="Zoulou Tchaing">
+            <label for="DF14" class="side-label">Zoulou Tchaing</label>
+
+            <input id="DF15" name="T15" type="radio" onclick="getchoice(14,this.value)" value="Déconnecté">
+            <label for="DF15" class="side-label">Déconnecté</label>
+
+            <input id="DF16" name="T16" type="radio" onclick="getchoice(15,this.value)" value="La misère est si belle">
+            <label for="DF16" class="side-label">La misère est si belle</label>
+            
+        </div>
+
+        <div class = "Album">
+            <img class="cover" src="FourCovers.JPG">
+            
+            <p>1) </p><p id="track1"></p>
+            </br>
+            <p>2) </p><p id="track2"></p>
+            </br>
+            <p>3) </p><p id="track3"></p>
+            </br>
+            <p>4) </p><p id="track4"></p>   
+            </br>
+            <p>5) </p><p id="track5"></p>
+            </br>
+            <p>6) </p><p id="track6"></p>
+            </br>
+            <p>7) </p><p id="track7"></p>
+            </br>
+            <p>8) </p><p id="track8"></p>
+            </br>
+            <p>9) </p><p id="track9"></p>
+            </br>
+            <p>10) </p><p id="track10"></p>
+            </br>
+            <p>11) </p><p id="track11"></p>
+            </br>
+            <p>12) </p><p id="track12"></p>
+            </br>
+            <p>13) </p><p id="track13"></p>
+            </br>
+            <p>14) </p><p id="track14"></p>
+            </br>
+            <p>15) </p><p id="track15"></p>
+            </br>
+            <p>16) </p><p id="track16"></p>
+        </div>
+
+
+        <div class = "percentage">
+
+            <button onclick="showresults()">Calculate</button>
+            <p id="p0" ></p>
+            <p id="p1" ></p>
+            <p id="qlf"></p>
+            <p id="p2" ></p>
+            <p id="lmc"></p>
+            <p id="p3" ></p>
+            <p id="dll"></p>
+            <p id="p4" ></p>
+            <p id="df"></p>
+            
+        </div>
+
+
+    </div>
+
+</body>
+
+
+</html>

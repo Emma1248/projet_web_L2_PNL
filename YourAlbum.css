@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Shadows+Into+Light&display=swap');
+
+{
+    margin : 0;
+    padding : 0;
+}
+
+body{
+    display:flex;
+    flex-wrap: wrap;
+    background: url('BackgroundWow.png') no-repeat center fixed;     
+    background-size: cover;
+}
+header{
+    height : 60px;
+    width: 838px;
+    background-size : cover;
+    justify-content: flex-end;
+    justify-content: flex-start;
+    justify-content : space-between;
+    flex-basis: 100%;
+    margin-top: 0;
+    padding-right: 170px;
+    padding-bottom: 45px;
+}
+
+.header_button{
+    float : right;
+    list-style-type : none;
+    margin-top : 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header_button .header_button_each a{
+    text-decoration : none;
+    color : rgb(255, 255, 255);
+    /*padding : 5px;*/
+    padding : 10px 30px;
+    border : 1px solid transparent;
+    transition : 0.6s ease;
+}
+.header_button .header_button_each a:hover{
+    background-color : rgb(255, 255, 255);
+    color : rgb(0, 0, 0);
+}
+.header_button .header_button_each.principal a{
+    background-color : white;
+    color : black;
+}
+
+ul{
+    float : right;
+    list-style-type : none;
+    margin-top : 20px;
+}
+
+ul li{
+    display : inline-block;
+}
+
+ul li a{
+    text-decoration : none;
+    color : #fff;
+    padding: 5px 20px;
+    border : 1px solid transparent;
+    transition : 0.5s ease;
+    font-family : 'Montserrat', sans-serif;
+}
+
+ul li a:hover{
+    background-color : #fff;
+    color : #000;
+}
+
+ul li.actual a{
+    background-color : #fff;
+    color : #000;  
+}
+
+/*****************************************/
+
+.content{
+
+    display: flex;
+    width: 100%;
+    height: 600px;
+    justify-content: space-between;
+
+}
+
+.cover{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+    width: 40%;
+    border-radius: 15%;
+    
+}
+
+.buttons{
+
+    width : 15%;
+    background-color: rgba(255, 255, 255, 0.527);
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+input[type="checkbox"], input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.side-label {
+    display: block;
+    position: relative;
+    margin: 10px 0;
+    padding-left: 35px;
+    cursor: pointer;
+}
+
+input[type="radio"] + .side-label::before,
+input[type="radio"] + .side-label::after {
+    border-radius: 50%;
+}
+
+.side-label::before, .side-label::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.side-label::before {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(71, 71, 71);  
+}
+.side-label::after {
+    display: none;
+    width: 16px;
+    height: 16px;
+    margin: 4px;
+    background-color: rgb(71, 71, 71); 
+}
+
+input:checked + .side-label::after {
+    display: block;
+}
+
+.Album{
+
+    width : 15%;
+    background-color: rgba(253, 56, 56, 0.527);
+
+}
+
+.percentage{
+
+    width:15%;
+    background-color: white;
+
+}
+
+.Album p{
+
+    margin-block-start: 0.34em;
+    margin-block-end: 0.34em;
+    white-space: normal;
+    display:inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold ;
+
+
+}
+
+.content .buttons label:hover{
+
+    text-decoration: underline
+
+}
+
+
+
+.percentage button{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    text-align:center;
+    width: 30%;
+    height: 10%;
+    background-color: rgb(209, 200, 200)
+    
+
+}
+
+.percentage button2:hover{
+
+    cursor: pointer;
+
+}
+
+
+.percentage p{
+
+    text-align: center;
+
+}
