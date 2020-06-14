@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
+/*  HEADER*/ 
 header {
   background-image : linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(PNL_Bercy.jpg);
   height : 100vh;
