@@ -83,6 +83,7 @@ ul li.actual a{
 .content{
 
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 600px;
     justify-content: space-between;
@@ -102,7 +103,8 @@ ul li.actual a{
 
 .buttons{
 
-    width : 15%;
+    min-width: 100px;
+    max-width: 200px;
     background-color: rgba(255, 255, 255, 0.527);
     align-items: center;
     font-family: 'Montserrat', sans-serif;
