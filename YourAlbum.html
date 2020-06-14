@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Your album  </title>
+<title> The perfect album  </title>
 <link rel = "stylesheet" type = "text/css" href = "YourAlbum.css">
 <script src = "YourAlbum.js"> </script>
 </head>
@@ -22,6 +22,9 @@
 </header>
 
 <body>
+    <div class="explication">
+        You can now choose one song on every line, to create your own perfect album. When finished, press the button.
+    </div>
 
     <div class = "content">
         <div class="buttons">
@@ -39,7 +42,7 @@
             <label for="QLF4" class="side-label">Obligés de prendre</label>
 
             <input id="QLF5" name="T5" type="radio" onclick="getchoice(4,this.value)" value="De la fenêtre au ter ter">
-            <label for="QLF5" class="side-label">De la fenêtre au ter ter</label>
+            <label for="QLF5" class="side-label">De la fenêtre au ter</label>
 
             <input id="QLF6" name="T6" type="radio" onclick="getchoice(5,this.value)" value="PNL">
             <label for="QLF6" class="side-label">PNL</label>
@@ -57,7 +60,7 @@
             <label for="QLF10" class="side-label">Athéna</label>
 
             <input id="QLF11" name="T11" type="radio" onclick="getchoice(10,this.value)" value="Recherche du bonheur">
-            <label for="QLF11" class="side-label">Recherche du bonheur</label>
+            <label for="QLF11" class="side-label">Recherche bonheur</label>
 
             <input id="QLF12" name="T12" type="radio" onclick="getchoice(11,this.value)" value="Simba">
             <label for="QLF12" class="side-label">Simba</label>
@@ -70,7 +73,7 @@
             <input id="LMC2" name="T2" type="radio" onclick="getchoice(1,this.value)" value="Sur Paname">
             <label for="LMC2" class="side-label">Sur Paname</label>
 
-            <input id="LMC3" name="T3" type="radio" onclick="getchoice(2,this.value)" value="Oh Lala">
+            <input id="LMC3" name="T3" type="radio" onclick="getchoice(2,this.value)" value="Oh lala">
             <label for="LMC3" class="side-label">Oh Lala</label>
 
             <input id="LMC4" name="T4" type="radio" onclick="getchoice(3,this.value)" value="J'vends">
@@ -254,7 +257,8 @@
 
         <div class = "percentage">
 
-            <button onclick="showresults()">Calculate</button>
+            <p>When finished, press this :</p>
+            <button id="button1" class="button1" onclick="showresults()"></button>
             <p id="p0" ></p>
             <p id="p1" ></p>
             <p id="qlf"></p>
@@ -264,6 +268,7 @@
             <p id="dll"></p>
             <p id="p4" ></p>
             <p id="df"></p>
+            <button id="buttonrestart" onClick="window.location.reload();">Restart</button>
             
         </div>
 

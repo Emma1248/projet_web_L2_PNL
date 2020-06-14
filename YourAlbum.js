@@ -1,10 +1,13 @@
 var tracklist = [];
 
-
 function getchoice(position,song){
 
     tracklist[position] = song ;
     document.getElementById(returnid(position)).innerHTML = song;
+
+    if (tracklist.length == 16){
+        document.getElementById('button1').className = "button2";
+    }
 
 
 }
@@ -99,6 +102,7 @@ function showresults(){
         document.getElementById("dll").innerHTML = dllp ;
         document.getElementById("p4").innerHTML = "DF :" ;
         document.getElementById("df").innerHTML = dfp ;
+
     } else {
 
         document.getElementById("p0").innerHTML = "Please choose 16 songs." ;
@@ -113,8 +117,6 @@ function showresults(){
 }
 
 function calculateqlf(){
-
-    console.log("prout");
 
     var count = 0;
 
@@ -160,8 +162,6 @@ function calculateqlf(){
 }
 
 function calculatelmc(){
-
-    console.log("prout");
 
     var count = 0;
 
@@ -220,8 +220,6 @@ function calculatelmc(){
 
 function calculatedll(){
 
-    console.log("prout");
-
     var count = 0;
 
     if (tracklist[0] == "DA"){
@@ -279,11 +277,9 @@ function calculatedll(){
 
 function calculatedf(){
 
-    console.log("prout");
-
     var count = 0;
 
-    if (tracklist[0] == "Au dd"){
+    if (tracklist[0] == "Au DD"){
         count++;
     }
     if (tracklist[1] == "Autre monde"){
