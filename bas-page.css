@@ -14,18 +14,7 @@ body{
     margin-right: 80px;
 }
 
-header{
-    
-    background: black
-    margin-bottom: 2em;
-    margin-top: 2em;
-}
 
-
-header .logo  {
-    width:  100%;
-    height: auto;
-}
 
 /***************BUTTONS****************/
 
@@ -59,7 +48,7 @@ margin-bottom: 2%;
 
 .supertitle{
 
-  padding-top: 50px;
+  padding-top: 40px;
   font-size: 40px;
   color: #fff;
   text-align: center;
@@ -82,10 +71,9 @@ margin-bottom: 2%;
 
 .wrapper{
     position: absolute;
-    top: 25%;
+    top: 17%;
     left: 50%;
     transform: translate(-50%,-50%);
-
 
     margin-top: 200px;
     margin-bottom: 150px;
