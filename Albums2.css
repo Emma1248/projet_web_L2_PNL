@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;    
 }
+
 body{
     display:flex;
     flex-wrap: wrap;
@@ -21,65 +22,87 @@ header{
     flex-basis: 100%;
     margin-top: 0;
     padding-right: 170px;
-}
-
-
-.header_button {
-    float : right;
-    list-style-type : none;
-    margin-top : 25px;
-    
-}
-
-.header_button .header_button_each a{
     font-family: 'Montserrat', sans-serif;
-    text-decoration : none;
-    color : white;
-    /*padding : 5px;*/
-    padding : 10px 30px;
-    border : 1px solid transparent;
-    transition : 0.6s ease;
-}
-.header_button .header_button_each a:hover{
-    background-color : white;
-    color : black;
-}
-.header_button .header_button_each.principal a{
-    background-color : white;
-    color : black;
 }
 
-
-ul{
-    float : right;
-    list-style-type : none;
-    margin-top : 20px;
+nav {
+    width : 100%;
+    background-color: transparent;
+}
+  
+nav > ul {
+margin : 0px;
+padding : 0px;
+padding-right : 30px;
+padding-top : 10px;
 }
 
-ul li{
-    display : inline-block;
+nav .header_button_each {
+list-style-type : none;
 }
 
-ul li a{
-    text-decoration : none;
-    color : #fff;
-    padding: 5px 20px;
-    border : 1px solid transparent;
-    transition : 0.5s ease;
-    font-family : sans-serif;
+nav .header_button_album {
+list-style-type : none;
 }
 
-ul li a:hover{
-    background-color : #fff;
-    color : #000;
+nav > ul > .header_button_each {
+float : right;
+position : relative;
 }
 
-ul li.actual a{
-    background-color : #fff;
-    color : #000;  
+nav >ul::after{
+content : "";
+display : table;
+clear : both;
 }
 
+.albums {
+display : none;
+}
 
+nav input[type=checkbox]{
+display : none;
+}
+
+nav label {
+display : none;
+}
+
+nav a{
+display : inline-block;
+text-decoration : none;
+}
+
+nav > ul > .header_button_each > a {
+padding : 10px 20px;
+color : white;
+}
+
+nav .header_button_each:hover .albums{
+display : inline-block;
+position : absolute;
+top : 100%;
+right : -200px;
+padding : 0px;
+z-index : 1000;
+}
+
+.albums .header_button_album a {
+padding : 15px 30px;
+font-size : 13px;
+color : white;
+width : 270px;
+}
+
+.albums .header_button_album a:hover {
+font-weight : bold;
+}
+
+nav .header_button_each a:hover{
+background-color : white;
+color : black;
+transition : all 0.6s;
+}
 
 
 
